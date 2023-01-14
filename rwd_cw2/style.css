@@ -1,0 +1,42 @@
+/* General rules */
+
+/* 1rem = 16px domyslnie */
+html {
+    font-size: 10px; /* 1 rem dla tego przykladu = 10px */
+  }
+  
+  /* Parent */
+  .parent {
+    font-size: 1.25em; /* 1.25 x 10 = 12.5px*/
+  }
+  
+  .child1 {
+    font-size: 2em; /* 2x12.5=25px*/
+  }
+  
+  .child2 {
+    font-size: 0.8em; /* 0.8 x 25 = 20px */
+  }
+  
+  .secondchild1 {
+    font-size: 2.5em; /* 2.5 x 12.5 = 31.25px */
+  }
+  
+  /* przyklad: inne fonty dla tabletów */
+  
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .child2 {
+      font-size: 1.2em; /* 1.2 x 25 = 30 px */
+    }
+  
+    .secondchild1 {
+      font-size: 3em; /* 3x 12.5= 37.5 */
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    * {
+      font-size: 2em;
+    }
+  }
+  
